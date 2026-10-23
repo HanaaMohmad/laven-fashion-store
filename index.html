@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LAVEN متجر أزياء عصري للملابس الرجالي والحريمي.">
+  <title>LAVEN | اكتشف أسلوبك</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">توصيل مجاني للطلبات فوق 1500 جنيه <span>✦</span> اكتشف مجموعتنا الجديدة</div>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="LAVEN الرئيسية">LAVEN<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="nav-link active">الرئيسية</a>
+      <a href="#collections" class="nav-link">المجموعات</a>
+      <a href="#products" class="nav-link">تسوق الآن</a>
+      <a href="#about" class="nav-link">عن لافين</a>
+      <a href="#contact" class="nav-link">تواصل معنا</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchToggle" aria-label="بحث">⌕</button>
+      <button class="icon-button" id="themeToggle" aria-label="تغيير المظهر">☾</button>
+      <button class="cart-button" id="openCart" aria-label="سلة المشتريات">السلة <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">مجموعة خريف / شتاء 2026</p>
+        <h1>أسلوبك.<br><em>قواعدك.</em></h1>
+        <p class="hero-description">قطع مختارة بعناية، تفاصيل تفرق، وأناقة تشبهك في كل يوم.</p>
+        <div class="hero-buttons">
+          <a class="button button-dark" href="#products">تسوق المجموعة <span>←</span></a>
+          <a class="text-link" href="#collections">اكتشف المجموعات</a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span> أناقة يومية بتفاصيل استثنائية</div>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=85" alt="إطلالة أزياء عصرية" class="hero-image">
+        <div class="hero-sticker"><strong>NEW</strong><span>SEASON</span><small>2026</small></div>
+        <div class="hero-caption"><span>01 / 03</span><span>THE NEW ESSENTIALS</span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><span class="trust-icon">✦</span><p><strong>خامات مختارة</strong><small>راحة وجودة في كل قطعة</small></p></div>
+      <div><span class="trust-icon">↗</span><p><strong>توصيل لكل مصر</strong><small>لحد باب بيتك</small></p></div>
+      <div><span class="trust-icon">↺</span><p><strong>استبدال سهل</strong><small>تسوق براحة بال</small></p></div>
+      <div><span class="trust-icon">♡</span><p><strong>ستايل يدوم</strong><small>قطع لكل المناسبات</small></p></div>
+    </section>
+
+    <section class="section collections-section" id="collections">
+      <div class="section-heading">
+        <div><p class="eyebrow">تسوق حسب اختيارك</p><h2>اكتشف مجموعاتنا</h2></div>
+        <a href="#products" class="text-link">كل المنتجات ←</a>
+      </div>
+      <div class="collection-grid">
+        <a class="collection-card collection-women" href="#products" data-filter-link="women">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85" alt="ملابس حريمي">
+          <span class="collection-number">01</span><div class="collection-info"><span>أناقة بلا مجهود</span><h3>الحريمي</h3><b>اكتشفي المجموعة ↙</b></div>
+        </a>
+        <a class="collection-card collection-men" href="#products" data-filter-link="men">
+          <img src="https://images.unsplash.com/photo-1516826957135-700dედf?auto=format&fit=crop&w=900&q=85" alt="ملابس رجالي" onerror="this.src='https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85'">
+          <span class="collection-number">02</span><div class="collection-info"><span>بساطة لها حضور</span><h3>الرجالي</h3><b>اكتشف المجموعة ↙</b></div>
+        </a>
+        <a class="collection-card collection-accessories" href="#products" data-filter-link="accessories">
+          <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85" alt="إطلالات واكسسوارات">
+          <span class="collection-number">03</span><div class="collection-info"><span>اللمسة الأخيرة</span><h3>الإطلالة الكاملة</h3><b>اكتشف التفاصيل ↙</b></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section products-section" id="products">
+      <div class="section-heading products-heading">
+        <div><p class="eyebrow">اختياراتنا لك</p><h2>قطع تستحق مكانًا في دولابك</h2></div>
+        <p class="heading-description">تصميمات عصرية توازن بين الراحة، الجودة، والتفاصيل.</p>
+      </div>
+      <div class="product-toolbar">
+        <div class="filter-tabs" role="group" aria-label="فلترة المنتجات">
+          <button class="filter-btn active" data-filter="all">الكل</button>
+          <button class="filter-btn" data-filter="women">حريمي</button>
+          <button class="filter-btn" data-filter="men">رجالي</button>
+          <button class="filter-btn" data-filter="accessories">إكسسوارات</button>
+        </div>
+        <label class="sort-label">ترتيب حسب
+          <select id="sortSelect">
+            <option value="featured">المميزة</option>
+            <option value="low">السعر: الأقل أولًا</option>
+            <option value="high">السعر: الأعلى أولًا</option>
+          </select>
+        </label>
+      </div>
+      <div class="search-panel" id="searchPanel"><input id="searchInput" type="search" placeholder="ابحث عن قطعة..."><button id="searchClose" aria-label="إغلاق البحث">×</button></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <p class="empty-state" id="emptyState" hidden>لم نجد منتجات مطابقة. جربي البحث بكلمة أخرى.</p>
+      <div class="center-action"><button class="button button-outline" id="showMore">استكشاف المجموعة كاملة <span>↓</span></button></div>
+    </section>
+
+    <section class="editorial">
+      <div class="editorial-image"><img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=1200&q=85" alt="تفاصيل أزياء أنيقة"></div>
+      <div class="editorial-copy"><p class="eyebrow">LAVEN EDIT</p><h2>البساطة ليست عادية.<br><em>إنها اختيار.</em></h2><p>نؤمن أن أفضل إطلالة هي التي تشعرك بالثقة. لذلك نختار قطعًا سهلة التنسيق، بخامات مريحة وألوان تعيش معك موسمًا بعد موسم.</p><a href="#products" class="button button-light">تسوق اختياراتنا <span>←</span></a></div>
+    </section>
+
+    <section class="newsletter section" id="about">
+      <div><p class="eyebrow">ابقَ على اطلاع</p><h2>رسالة صغيرة، إلهام كبير.</h2><p>اشترك لتصلك أحدث المجموعات والعروض أولًا.</p></div>
+      <form id="newsletterForm" class="newsletter-form"><label class="sr-only" for="newsletterEmail">البريد الإلكتروني</label><input id="newsletterEmail" type="email" placeholder="بريدك الإلكتروني" required><button type="submit">اشترك الآن <span>←</span></button><small id="newsletterMessage">بالاشتراك، أنت توافق على تلقي تحديثاتنا.</small></form>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="logo" href="#home">LAVEN<span>.</span></a><p>أساسيات عصرية. تفاصيل مدروسة.<br>أسلوبك يبدأ من هنا.</p><div class="social-links"><a href="#contact" aria-label="إنستجرام">ig</a><a href="#contact" aria-label="فيسبوك">fb</a><a href="#contact" aria-label="تيك توك">tk</a></div></div>
+      <div><h4>تسوق</h4><a href="#products">كل المنتجات</a><a href="#collections">المجموعات الجديدة</a><a href="#products">الأكثر مبيعًا</a></div>
+      <div><h4>خدمة العملاء</h4><a href="#contact">تواصل معنا</a><a href="#contact">الشحن والتوصيل</a><a href="#contact">الاستبدال والاسترجاع</a></div>
+      <div><h4>تواصلي معنا</h4><p>يسعدنا الرد على استفساراتك</p><a href="mailto:hello@laven.example">hello@laven.example</a><p>يوميًا من 10 صباحًا حتى 10 مساءً</p></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 LAVEN. جميع الحقوق محفوظة.</span><span>صُمم بذوق ✦ وصُنع بعناية</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="سلة المشتريات" aria-hidden="true">
+    <div class="drawer-header"><div><p class="eyebrow">YOUR SELECTION</p><h2>سلة مشترياتك <span id="drawerCount">(0)</span></h2></div><button id="closeCart" class="close-button" aria-label="إغلاق السلة">×</button></div>
+    <div id="cartItems" class="cart-items"><div class="cart-empty"><span>♡</span><h3>سلتك لسه فاضية</h3><p>اختاري قطعك المفضلة وابدئي رحلتك مع لافين.</p></div></div>
+    <div class="cart-footer"><div class="subtotal"><span>الإجمالي</span><strong id="cartSubtotal">0 ج.م</strong></div><p>تكلفة الشحن تُحدد عند تأكيد الطلب.</p><button class="button button-dark checkout-btn" id="checkoutBtn">تأكيد الطلب <span>←</span></button><small id="checkoutMessage"></small></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
